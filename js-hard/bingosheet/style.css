@@ -1,0 +1,20 @@
+td {
+  background-color: rgb(70, 206, 216);
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  table-layout: fixed;
+  padding: 1px;
+  font-size: 20px;
+}
+
+/* チャレンジ問題 */
+
+/* .hit-num {
+  background-color: black ;
+  color: rgb(70, 206, 216) ;
+} */
+
+/* チャレンジ問題 ここまで */

@@ -1,0 +1,17 @@
+img {
+  width: 150px;
+  height: 300px;
+}
+
+.img-wrap {
+  display: flex;
+}
+
+/* チャレンジ問題 */
+
+/* p {
+  text-align: center;
+  font-weight: bold;
+} */
+
+/* チャレンジ問題 ここまで */

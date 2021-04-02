@@ -1,0 +1,23 @@
+div {
+  display: flex;
+  align-items: center;
+}
+
+/* チャレンジ問題 */
+
+/* body {
+  text-align: center;
+}
+
+.select-hand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-hand {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 auto;
+} */

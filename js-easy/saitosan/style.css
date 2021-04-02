@@ -1,0 +1,10 @@
+body {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,28 @@
+/*全体のスタイル（CSSリセット用）*/
+*{
+    /* padding,borderが要素の中に入る */
+    box-sizing:border-box;
+}
+ul{
+    /* リストの・を消す */
+    list-style: none;
+    margin:0;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,button{
+    margin:0;
+    padding:0;
+    font-weight:normal;
+}
+
+a{
+    color:inherit; 
+    /* 文字の下の線を消す */
+    text-decoration:none;   
+}
+
+body{
+    color:#555;
+    margin:0;
+    line-height:1.6;
+}
