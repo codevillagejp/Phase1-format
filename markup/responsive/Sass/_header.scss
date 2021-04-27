@@ -1,0 +1,26 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    background-color: black;
+    
+    nav{
+        width: 45%;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+        }
+    
+    }
+}
+/*header-logo*/
+.hd-logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.ham{
+    display: none;
+}
