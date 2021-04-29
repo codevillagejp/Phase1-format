@@ -1,0 +1,41 @@
+#entry{
+    height: 477px;
+    width: 100%;
+    position: relative;
+}
+
+.entry-wrap{
+    width: 400px;
+    height: 127px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    align-items: center;
+
+    @include sp{
+        width: 90%;
+    }
+}
+.entry-copy{
+    font-weight: bold;
+    font-size: 18px;
+    color: #191919;
+}
+
+.entry-btn{
+    width: 320px;
+    height: 50px;
+    background: linear-gradient(to right,$sky,$navy);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0 5px black;
+    .btn-icon{
+      margin-right: 5px;  
+    }
+}

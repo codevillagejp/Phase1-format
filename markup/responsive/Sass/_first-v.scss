@@ -1,0 +1,52 @@
+#first-v{
+    background-image: URL("../img/bg1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.first-v__wrap{
+    width: 250px;
+    height: 230px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    align-items: center;
+   
+    @include sp{
+        height: 50%;
+        top: 65%;
+    }
+}
+.catch{
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 27px;
+
+    &::after{
+        display: block;
+        width: 9.7rem;
+        content: "";
+        border-top:1px solid #fff ;
+        margin: 20px auto 0;
+
+    }
+}
+
+.fv-btn{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right,$sky,$navy);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow:0 5px black;
+    .btn-icon{
+      margin-right: 5px;  
+    }
+}

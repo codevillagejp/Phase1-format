@@ -1,0 +1,59 @@
+#about{
+    background-color: #f8f8f8;
+}
+
+.about-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-item{
+    // 300(item横幅s)/1100(inner横幅)=27%
+    width: 27%;
+    background-color: #fff;
+    padding: 35px 3.5vw 50px;
+
+    @include tab {
+        width: 48%;
+    }
+    
+    &__title{
+        font-size: 2.2rem;
+        text-align: center;
+       
+        @include sp{
+            font-size: 1.5rem;
+        }
+    }
+    
+    &__img{
+        width: 122px;
+        height: 122px;
+        margin: 20px auto 25px;
+        
+        img{
+            width:100%;
+            height:100%;
+        }
+        
+    }
+    &:nth-child(3){
+        @include tab{
+        margin-top: 30px;
+        }
+    }
+    
+    &:nth-child(n+4){
+        margin-top: 47px;
+     
+        @include tab{
+        margin-top: 30px;
+        }
+    }
+    &__desc{
+    font-size: 1.3rem;
+    }
+
+
+}   

@@ -1,0 +1,82 @@
+#contact{
+    background-image: URL("../img/bg3.png");
+    background-size: cover;
+    color: #fff;
+    font-size: 15px;
+
+.title{
+    color: #fff;
+
+&::before,  &::after{
+    border-color: #fff;
+}
+}
+}
+
+.contact-wrap{
+    width: 600px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @include tab{
+        width: 80%;
+    }
+    @include sp{
+        width: 100%;
+    }
+}
+
+input,select,textarea{
+    width: 100%;
+    border-radius: 7px;
+    padding: 15px;
+}
+select{
+    appearance: none;
+}
+
+
+input,select{
+    height: 55px;
+
+}
+textarea{
+    height: 185px;
+}
+.contact-caution{
+    padding-bottom: 25px;
+}
+
+.contact-box{
+ margin-bottom: 33px;
+
+ &:nth-of-type(3){
+     position: relative;
+ }
+&:nth-of-type(3)::after{    
+    background-image: URL("../img/arrow.png");
+    background-size: 100%;
+    position: absolute;
+    content: "";
+    display: block;
+    top: 60%;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+
+}
+&:nth-of-type(4){
+    margin-bottom: 0;
+}
+}
+.contact-text{
+    margin-bottom: 10px;
+}
+.red{
+    color: red;
+    margin-left: 8px;
+}
+.caution-red{
+    margin-left:0;
+    margin-right: 8px;
+}
