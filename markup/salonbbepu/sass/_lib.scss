@@ -1,0 +1,19 @@
+html{
+}
+
+.title{
+    font-style: 'Roboto';
+    display: flex;
+    align-content: center;
+    font-size: 18px;
+    color: #707070;
+    line-height: 24px;
+    &:after{
+        width: 99px;
+        height: 12px;
+        display: block;
+        content: "";
+        border-bottom: 1px solid #707070;
+        margin-left: 22.5px;
+    }
+}

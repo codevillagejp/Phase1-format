@@ -1,0 +1,64 @@
+#concept{
+    width: 100%;
+    height: 967px;
+    position: relative;
+    .title{
+        position: absolute;
+        top: 256px;
+        left: 12%;
+        //margin-//
+    //947px 127px 101px;//
+        width: 240px;
+        margin-bottom: 11px;
+    }
+}
+.fwrap{
+    width: 100%;
+    height: 407px;
+    background-color: #A193861F;
+}
+.con-wrap{
+    width: 100%;
+    height:560px;
+    background-color: #A1938689;
+    position: absolute;
+    top: 407px;
+    left: 0;
+    .mess-wrap{
+        position: absolute;
+            bottom: 64px;
+            left: 17%;
+            display: flex;
+            width: 924px;
+            height: 130px;
+            align-items: center;
+            color: #FFFFFF;
+        .mess3{
+            font-size: 40px;
+            font-family: 'ヒラギノ明朝 Pro';
+            width: 445px;
+            height: 42px; 
+            margin-right: 57px;
+            margin-bottom: 60px;
+        }
+        .mess4{
+            width: 422px;
+            height : 130px;
+            font-size: 16px;
+            font-family: 'ヒラギノ角ゴ Pro';
+        }
+    }
+}
+.c-img-wrap{
+    position: absolute;
+    top: 291px;
+    left:12%;
+    display: flex;
+    width: 1077px;
+    height : 413px;
+    opacity: 1;
+    z-index: 10;
+    .img1{
+        margin-right: 11px;
+    }
+}

@@ -1,0 +1,56 @@
+#menu{
+    width: 100%;
+    height: 921px;
+    background-color: #FFFFFF;
+    padding-top: 261px;
+    padding-bottom:70px;
+    .title{
+        width: 1067px;
+        height: 24px;
+        margin:0 auto;
+        margin-bottom: 11px;
+    }
+}
+.menu-wrap{
+    width: 1067px;
+    height: 555px;
+    display: flex;
+    margin: 0 auto;
+}
+.menu-item{
+    width: 271px;
+    height: 555px;
+    margin-right: 127px;
+    &:nth-of-type(3){
+        margin-right: 0;
+    }
+    .item__img{
+        margin-bottom: 37px;
+        width: 271px;
+        height: 271px;
+        img{
+            
+        }
+    }
+    .item__title{
+        width: 100%;
+        height: 30px;
+        font-size: 30px;
+        font-family: 'Roboto Mono';
+        margin-bottom: 34px;
+        text-align: center;
+    }
+    .item__des{
+        width: 100%;
+        height: 131px;
+        font-size: 16px;
+        margin: 0 auto 34px;
+    }
+    .item-price{
+        width: 261px;
+        height: 18px;
+        font-size: 16px;
+        margin-right:10px;
+        text-align: right;
+    }
+}

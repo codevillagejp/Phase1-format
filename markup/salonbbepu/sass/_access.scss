@@ -1,0 +1,54 @@
+#access{
+    background-color: #A193861F;
+    width: 100%;
+    height: 757px;
+    padding: 261px 0 70px;
+    .title{
+        margin-bottom: 6px;
+        margin-left: 107px;
+    }
+}
+.access-wrap{
+    width: 100%;
+    height: 396px;
+    display: flex;
+    flex-direction: row;
+
+    .info-wrap{
+    width: 40%;
+    height: 396px;
+    color: #FFFFFF;
+    background-color: #D0C5BA;
+    .info-box{
+        width: 210px;
+        height: 192px;
+        margin-left: 104px;
+        margin-top: 101px;
+        margin-bottom: 103px; 
+
+        .tenpo{
+            color: #00000038;
+            font-size: 24px;
+            text-align: left;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 24px;
+            &:nth-of-type(4){
+                margin-bottom: 0;
+            }
+        }
+    }
+    }
+    .info-map{
+    width: 60%;
+    height: 396px;
+    iframe{
+        width: 100%;
+        height: 396px;
+    }
+    }
+
+}

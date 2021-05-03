@@ -1,0 +1,48 @@
+#footer{
+    width: 100%;
+    height: 342px;
+    color: #FFFFFF;
+    position: relative;
+}
+.bro{
+    width: 1068px;
+    border-bottom: 1px solid #70707036;
+    margin: 164px 106px 80px 107px;
+}
+.footer-wrap{
+    width: 1066px;
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 37px;
+    margin: 245px 113px 60px 103px;
+}
+.fowrap{
+    display: flex;
+    
+}
+.footer-logo{
+    color: #7070704D;
+    font-size: 32px;
+}
+.f-btn{
+    color: #707070;
+    padding:10px 41px 10px;
+    font-family: Roboto Mono for Powerline;
+    border:1px solid #707070;
+    background-color: #FFFFFF;
+}
+.footer-img1{
+    color: black;
+    width: 20px;
+    height: 19px;
+    margin-left: 26px;
+    margin-right: 9px;
+    z-index: 5;
+}
+.footer-img2{
+    color: black;
+    width: 22px;
+    height: 19px;
+    z-index: 5;
+}
