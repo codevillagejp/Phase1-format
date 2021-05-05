@@ -104,6 +104,10 @@ hr {
 input, select {
   vertical-align: middle;
 }
+body {
+  width: 100%;
+}
+
 .title {
   font-style: 'Roboto';
   display: flex;
@@ -136,7 +140,7 @@ header {
 .header-logo {
   font-size: 38px;
   margin-top: 68px;
-  margin-left: 77px;
+  margin-left: 6%;
   margin-right: 20px;
 }
 
@@ -168,7 +172,7 @@ ul li:nth-child(n+2) {
 }
 
 #first-v {
-  width: 100vw;
+  width: 100%;
   color: #000000;
   height: 800px;
   background-color: #FFFFFF;
@@ -177,47 +181,49 @@ ul li:nth-child(n+2) {
   position: relative;
 }
 
-#first-v .half-wrap {
-  width: 40%;
+.half-wrap {
+  width: 46%;
   height: 800px;
 }
 
-#first-v .half-wrap .fvhalf {
+.half-wrap .fvhalf {
   height: 214px;
-  width: 400px;
+  width: 390px;
+  position: absolute;
+  top: 296px;
+  left: 8%;
   z-index: 2;
-  margin: 296px 97px 290px 107px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  text-align: right;
 }
 
-#first-v .half-wrap .fvhalf .mess1 {
+.half-wrap .fvhalf .mess1 {
+  width: 326px;
   font-size: 38px;
   font-family: 'ヒラギノ明朝 Pro';
   margin-bottom: 48px;
+  margin-left: 56px;
+  text-align: left;
   z-index: 3;
 }
 
-#first-v .half-wrap .fvhalf .mess2 {
+.half-wrap .fvhalf .mess2 {
   font-size: 38px;
   font-family: 'Zapfino';
-  width: 390px;
+  width: 100%;
   height: 128px;
   z-index: 3;
+  text-align: center;
+  line-height: 128px;
 }
 
-#first-v .imv {
-  width: 689px;
+.imv {
+  width: 54%;
   height: 800px;
-  position: absolute;
-  top: 0;
-  right: 0;
   background-image: URL("../img/component.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  z-index: 2;
+  background-size: cover;
 }
 
 #concept {
@@ -229,7 +235,7 @@ ul li:nth-child(n+2) {
 #concept .title {
   position: absolute;
   top: 256px;
-  left: 12%;
+  left: 8%;
   width: 240px;
   margin-bottom: 11px;
 }
@@ -279,16 +285,24 @@ ul li:nth-child(n+2) {
 .c-img-wrap {
   position: absolute;
   top: 291px;
-  left: 12%;
+  left: 8%;
   display: flex;
-  width: 1077px;
+  width: 85%;
   height: 413px;
   opacity: 1;
   z-index: 10;
 }
 
 .c-img-wrap .img1 {
+  width: 500px;
+  object-fit: cover;
   margin-right: 11px;
+  object-position: right;
+}
+
+.c-img-wrap .img2 {
+  width: 400px;
+  object-fit: cover;
 }
 
 #menu {
@@ -300,17 +314,16 @@ ul li:nth-child(n+2) {
 }
 
 #menu .title {
-  width: 1067px;
   height: 24px;
-  margin: 0 auto;
+  margin-left: 8%;
   margin-bottom: 11px;
 }
 
 .menu-wrap {
-  width: 1067px;
+  width: 83.2%;
   height: 555px;
   display: flex;
-  margin: 0 auto;
+  margin-left: 8%;
 }
 
 .menu-item {
@@ -358,11 +371,12 @@ ul li:nth-child(n+2) {
   width: 100%;
   height: 757px;
   padding: 261px 0 70px;
+  position: relative;
 }
 
 #access .title {
   margin-bottom: 6px;
-  margin-left: 107px;
+  margin-left: 8%;
 }
 
 .access-wrap {
@@ -382,9 +396,9 @@ ul li:nth-child(n+2) {
 .access-wrap .info-wrap .info-box {
   width: 210px;
   height: 192px;
-  margin-left: 104px;
-  margin-top: 101px;
-  margin-bottom: 103px;
+  position: absolute;
+  top: 392px;
+  left: 8%;
 }
 
 .access-wrap .info-wrap .info-box .tenpo {
@@ -419,21 +433,23 @@ ul li:nth-child(n+2) {
   height: 342px;
   color: #FFFFFF;
   position: relative;
+  padding-top: 164.5px;
 }
 
-.bro {
-  width: 1068px;
-  border-bottom: 1px solid #70707036;
-  margin: 164px 106px 80px 107px;
-}
-
-.footer-wrap {
-  width: 1066px;
+#footer .footer-wrap {
+  width: 83%;
   height: 37px;
   display: flex;
   justify-content: space-between;
   line-height: 37px;
-  margin: 245px 113px 60px 103px;
+  margin-left: 8%;
+  margin-bottom: 60px;
+}
+
+#footer .bro {
+  width: 83%;
+  border-bottom: 1px solid #70707036;
+  margin: 0 auto 80.5px;
 }
 
 .fowrap {

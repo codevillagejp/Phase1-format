@@ -5,9 +5,7 @@
     .title{
         position: absolute;
         top: 256px;
-        left: 12%;
-        //margin-//
-    //947px 127px 101px;//
+        left: 8%;
         width: 240px;
         margin-bottom: 11px;
     }
@@ -52,13 +50,20 @@
 .c-img-wrap{
     position: absolute;
     top: 291px;
-    left:12%;
+    left:8%;
     display: flex;
-    width: 1077px;
+    width: 85%;//1077//
     height : 413px;
     opacity: 1;
     z-index: 10;
     .img1{
+        width: 500px;
+        object-fit: cover;
         margin-right: 11px;
+        object-position: right;
+    }
+    .img2{
+        width: 400px;
+        object-fit: cover;
     }
 }

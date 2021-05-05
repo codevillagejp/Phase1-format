@@ -1,56 +1,54 @@
+//画面比６：７、＝４６％：５４％//
 #first-v{
-    width: 100vw;
+    width: 100%;
     color: #000000;
     height: 800px;
     background-color: #FFFFFF;  
     display: flex;
     justify-content: space-between;
     position: relative;
-
+}
 .half-wrap{
-     width: 40%;
+     width: 46%;
      height: 800px;
    
     .fvhalf{
     height: 214px;
-    width: 400px;
-    //position: absolute;//
-   // top: 50%;//
-    //right: 45%;//
+    width: 390px;
+    position: absolute;
+    top: 296px;
+    left: 8%;
     z-index: 2;
-   margin: 296px 97px 290px 107px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    text-align: right;
     .mess1{
+        width: 326px;
         font-size: 38px;
         font-family: 'ヒラギノ明朝 Pro';
         margin-bottom: 48px;
+        margin-left: 56px;
+        text-align: left;
         z-index: 3;
+
     }
     .mess2{
         font-size: 38px;
         font-family: 'Zapfino'; 
-        width: 390px;
+        width: 100%;
         height: 128px;
         z-index: 3;
+        text-align: center;
+        line-height: 128px;
     }
     }
 }
-//.first-v-img{//
-    //width: 60%;//
-    //height: 800px;//
-//}//
 .imv{
-    width: 689px;//60%//
+    width: 54%;
     height: 800px;
-    position: absolute;
-    top: 0;
-    right: 0;//40vw//
     background-image: URL("../img/component.png");
     background-repeat: no-repeat;
-    background-size: 100%;
-    z-index: 2;
-}
+    background-size: cover;
+    // background-size: contain;//
+    // background-position: right;//
 }

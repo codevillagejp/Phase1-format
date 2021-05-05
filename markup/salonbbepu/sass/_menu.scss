@@ -5,17 +5,16 @@
     padding-top: 261px;
     padding-bottom:70px;
     .title{
-        width: 1067px;
         height: 24px;
-        margin:0 auto;
+        margin-left:8%;
         margin-bottom: 11px;
     }
 }
 .menu-wrap{
-    width: 1067px;
+    width: 83.2%;//1067//
     height: 555px;
     display: flex;
-    margin: 0 auto;
+    margin-left:8%;
 }
 .menu-item{
     width: 271px;
@@ -28,9 +27,9 @@
         margin-bottom: 37px;
         width: 271px;
         height: 271px;
-        img{
-            
-        }
+        
+        
+    
     }
     .item__title{
         width: 100%;

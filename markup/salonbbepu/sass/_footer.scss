@@ -3,19 +3,22 @@
     height: 342px;
     color: #FFFFFF;
     position: relative;
-}
+    padding-top: 164.5px;
+
+    .footer-wrap{
+        width: 83%;
+        height: 37px;
+        display: flex;
+        justify-content: space-between;
+        line-height: 37px;
+        margin-left: 8%;
+        margin-bottom: 60px;
+    }
 .bro{
-    width: 1068px;
+    width: 83%;//1068//
     border-bottom: 1px solid #70707036;
-    margin: 164px 106px 80px 107px;
+    margin:0 auto 80.5px;
 }
-.footer-wrap{
-    width: 1066px;
-    height: 37px;
-    display: flex;
-    justify-content: space-between;
-    line-height: 37px;
-    margin: 245px 113px 60px 103px;
 }
 .fowrap{
     display: flex;
