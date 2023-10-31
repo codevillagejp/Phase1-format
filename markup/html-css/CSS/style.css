@@ -26,3 +26,337 @@ body{
     margin:0;
     line-height:1.6;
 }
+
+/*共通パート*/
+.first-v-btn {
+    width:200px;
+    height:50px;
+    text-align: center;
+    font-weight: bold;
+    /* 枠線を消す */
+    border:none;
+    /* 要素の枠を丸くする */
+    border-radius: 5px;
+    /* -90degで左から右にグラデーションする */
+    background: linear-gradient(-90deg,#283C86,#06BEB6);
+    /* 要素に影をつける */
+    box-shadow:0px 5px #070707;
+    font-weight:bold;
+    font-size:15px;
+    color:#FFF;
+}
+.fa-door-open {
+    padding-right:4px;
+}
+
+.title{
+    font-size: 18px;
+    /* 文字をイタリック体にイタリック体 */
+    font-style:italic;
+    /* 擬似要素とtitleを横並びに */
+    display:flex;
+    padding-bottom:60px;
+    /* 要素全体を横方向に中央揃え */
+    justify-content: center;
+    /* 線を文字の縦方向に中央揃え */
+    align-items: center;
+}
+
+/* header */
+header{
+    width:100%;
+    /* 子要素を横並びに */
+    display:flex;
+    /* 子要素を親要素の両端へ */
+    justify-content:space-between;
+    padding:0 20px;
+    color:#fff;
+    /* 背景色をblackにして綺麗に表示されていたらblackをinheritに変更 */
+    background-color: transparent;
+     /* first-vに合わせる */
+     position:absolute;
+     /* headerが一番上に来るようにする */
+     z-index: 10;
+}
+.header-logo {
+    padding:20px 0;
+    font-weight:bold;
+    font-size:18px;
+}
+.header-nav ul{
+    /* 子要素を横並びに */
+    display:flex;
+    padding:22px 0;
+}
+.header-nav li{
+    /* li要素同士の余白 */
+    margin-left:55px;
+    font-size:15px;
+}
+
+
+/* first-viewのスタイル */
+#first-view {
+    height: 770px;
+    /* 背景画像を挿入 */
+    background-image: url("../img/bg1.png") ;
+    /* 画面全体に画像が表示されるように */
+    background-size: cover;
+    position: relative;
+}
+
+.first-v-wrap{
+    padding:285px 0 255px;
+    /* ブロック要素を中央揃え */
+    margin:0 auto;
+    width:250px;
+    text-align: center;
+}
+.first-v-title {
+    margin-bottom:150px;
+    /* 文字を太文字に */
+    font-weight:bold;
+    font-size: 27px;
+    color:#FFF;
+}
+.first-v-title::after {
+    display:block;
+    content:"";
+    width:100px;
+    margin:20px auto 0;
+    /* 線を作る */
+    border-top:1px solid #FFF;
+}
+
+
+/* aboutのスタイル */
+#about{
+    color:#191919;
+    background-color:#F8F8F8;
+}
+.inner{
+    /* about-itemの横幅と間隔の合計 */
+    width:1100px;
+    /*titleまでの距離*/
+    padding:90px 0;
+    /* innderが画面の中央に */
+    margin:0 auto;
+}
+.title-b{
+    /* Aboutの部分だけを太文字に */
+    font-weight: bold;
+}
+.title::before{
+    /*疑似要素には必ずつける*/
+    display: inline-block;
+    content: "";
+    width:30px;
+    margin-right:20px;
+    border-top:1px solid #191919;
+
+}
+.title::after{
+    /*疑似要素には必ずつける*/
+    display: inline-block;
+    content: "";
+    width:30px;
+    margin-left:20px;
+    border-top:1px solid #191919;
+}
+.about-wrap{
+    /* 子要素を横並びに */
+    display:flex;
+    /* 横幅が親要素を超える時に子要素を次の段に移す */
+    flex-wrap: wrap;
+    /* 横並びを中央に移動する */
+    justify-content: center; 
+    margin-top:60px;
+}
+.about-item{
+    width:300px;
+    height:315px;
+    padding:35px 50px 50px;
+    text-align: center;
+    background-color:#FFF;
+    margin: 0px 10px;
+}
+.about-item:nth-child(n+4){
+    /* 4~6個目のabout-itemにmarginをつける */
+    margin-top:47px;
+}
+.about-title__title{
+    font-size: 22px;
+}
+.about-item__img img{
+    width:122px;
+    height:122px;
+    margin:20px 0 25px;
+}
+.about-item__desc{
+    font-size: 13px;
+}  
+
+/* Newsのスタイル */
+#news {
+    width: 100%;
+    /* 背景画像を挿入 */
+    background-image: url("../img/bg2.png") ;
+    /* 画面全体に画像が表示されるように */
+    background-size: cover;
+}
+.white-title{
+    width:150px;
+    /* newsのtitleのみ色を変更 */
+    color:#FFF;
+    margin: auto;
+}
+.white-title::before{
+    content:"";
+    width:30px;
+    margin-right:20px;
+    /* newsのtitleのみ色を変更 */
+    border-top:1px solid #fff;
+
+}
+.white-title::after{
+    content:"";
+    width:30px;
+    margin-left:20px;
+    /* newsのtitleのみ色を変更 */
+    border-top:1px solid #fff;
+}
+.news-wrap{
+    /* 子要素を横並び */
+    display:flex;
+    justify-content: space-between;
+    overflow:hidden;
+}
+.news-item{
+    width:336px;
+    margin-top:60px;
+}
+
+.news-img{
+    width:100%;
+    height:207px;
+}
+.news-img img{
+    width:100%;
+    height:100%;
+}
+.news-content {
+    padding:20px;
+    background-color: #fff;
+}
+.news-date{
+    font-size: 10px;
+    font-weight: bold;
+}
+.news-title{
+    padding:8px 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.news-txt{
+    font-size: 12px;
+}
+
+/* Entryのスタイル */
+.entry-wrap{
+    padding:285px 0 255px;
+    /* ブロック要素を中央揃え */
+    margin:0 auto;
+    width:600px;
+    text-align: center;
+}
+.entry-title {
+    /* 横方向に中央揃え */
+    margin-bottom:55px;
+    font-weight:bold;
+    font-size:18px;
+    color:#191919;
+}
+.entry-btn{
+    width: 320px;
+}
+
+/* contact */
+#contact{
+    background-image: url("../img/bg3.png");
+    /* 画像が真ん中に表示される */
+    background-size: cover;
+    color:#fff;
+}
+.contact-wrap{
+    width:600px;
+    margin:0 auto;
+}
+#contact .title::before,#contact .title::after{
+    border-color:#fff;
+}
+.contact-caution{
+    margin:60px 0 25px;
+}
+
+.contact-box{
+    margin-bottom:33px;
+}
+
+.contact-text{
+    margin-bottom:10px;
+    font-size: 15px;
+}
+input,textarea,select {
+    width:100%;
+    border-radius: 7px;
+    /* placeholderに余白をつける */
+    padding:15px;
+}
+select{
+    /* デフォルトでついている矢印アイコンを消す */
+    appearance: none;
+}
+.contact-box:nth-of-type(3){
+    position:relative;
+}
+.contact-box:nth-of-type(3)::after{
+    position:absolute;
+    background:url("../img/arrow.png");
+    background-size:100%;
+    display:block;
+    content:"";
+    width:15px;
+    height:15px;
+    top:60%;
+    right:15px;
+}
+textarea{
+    height:185px;
+}
+.contact-box:nth-of-type(4){
+    margin-bottom:0px;
+}
+.red{
+    color:red;
+    margin-left:8px;
+}
+.caution-red{
+    margin-left:0;
+    margin-right:8px;
+}
+.select-box {
+    font-weight: bold;
+}
+/*footer*/
+footer{
+    background-color:#191919;
+    height:50px;
+}
+.copy-write {
+    font-weight:bold;
+    font-size:12px;
+    color: #fff;
+    text-align: center;
+    line-height:50px;
+    
+}
