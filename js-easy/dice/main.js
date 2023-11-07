@@ -15,8 +15,14 @@ let diceNum = './img/saikoro1.png';
 dice.setAttribute('src', diceNum);
 // bodyの子要素としてdice(<img src = diceNum></img>)を追加する
 body.appendChild(dice);
+
+const randomlyChangeTheImage = function() {
+    console.log("test");
+  diceNum = `./img/saikoro${Math.floor(Math.random() * 6 + 1)}.png`;
+  dice.setAttribute('src', diceNum);
+};
 // イベントclickが発生したときdiceBtn要素
-diceBtn.addEventListener('click', function() {
+diceBtn.addEventListener('click', () => {
 let timer = setInterval(randomlyChangeTheImage, 100);
 // timer関数の画像の切り替わりを解除する(clearInterval)処理を3秒後に1度だけ(setTimeout)行う
   setTimeout(() => {
@@ -25,7 +31,4 @@ let timer = setInterval(randomlyChangeTheImage, 100);
 });
 // randomlyChangeTheImage(); 定義エラー
 
-const randomlyChangeTheImage = function() {
-  diceNum = `./img/saikoro${Math.floor(Math.random() * 6 + 1)}.png`;
-  dice.setAttribute('src', diceNum);
-};
+
