@@ -1,3 +1,4 @@
+ develop
 // // - 片方のボタンを何回か押した時の回数カウント
 
 // // cntPerson変数を初期化
@@ -82,3 +83,4 @@ const reply = function() {
 };
 
 // だちょー
+master
