@@ -80,3 +80,5 @@ const reply = function() {
     alert(action);
     cntPerson = 0;
 };
+
+// だちょー
