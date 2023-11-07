@@ -23,12 +23,16 @@ const randomlyChangeTheImage = function() {
 };
 // イベントclickが発生したときdiceBtn要素
 diceBtn.addEventListener('click', () => {
-let timer = setInterval(randomlyChangeTheImage, 100);
+let timer = setInterval("randomlyChangeTheImage", 100);
+// let timer = setInterval("randomlyChangeTheImage", 100);←関数定義前に使用するときは引数を文字列で渡す、定義後はふつう
 // timer関数の画像の切り替わりを解除する(clearInterval)処理を3秒後に1度だけ(setTimeout)行う
   setTimeout(() => {
     clearInterval(timer);
   }, 3000);
 });
 // randomlyChangeTheImage(); 定義エラー
+
+// 関数の巻き上げも関数の先頭で宣言されたように扱われます。ただし、巻き上げられるのは宣言部分のみなので、この時点ではその中身の代入までは行われません。
+// https://analogic.jp/hoisting/
 
 
