@@ -1,30 +1,64 @@
-panel {
-  width: 310px;
-  height: 340px;
-  overflow: hidden;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#panel {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  width: 100%;
+  padding: 20px 0 0 50%;
 }
 
 .card {
-  width: 60px;
-  height: 80px;
-  line-height: 80px;
-  border: 1px solid silver;
+  width: 100px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
   border-radius: 10px;
-  text-align: center;
-  font-size: 26px;
-  font-weight: bold;
-  box-shadow: gray 2px 2px;
-  background: white;
-  float: left;
   cursor: pointer;
-}
-/* 裏の状態 */
-.back {
-  background-size: 60px 80px;
-  background-color: rgb(45, 139, 50);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.finish {
-  opacity: 0;
+/* 裏の状態 */
+.card.back {
+  background-color: #0070f3;
+  color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:not(.back) {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ペアが揃った状態 */
+.card.finish {
+  background-color: #28a745;
+  color: #fff;
   cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card.back:hover {
+  background-color: #005bb5;
 }
