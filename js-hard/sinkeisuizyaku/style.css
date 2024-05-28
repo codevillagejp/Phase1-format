@@ -9,22 +9,21 @@ body {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.6em;
   color: #333;
   margin-bottom: 20px;
 }
 
 #panel {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  gap: 10px;
-  width: 100%;
-  padding: 20px 0 0 50%;
+  grid-template-columns: repeat(4, 60px);
+  gap: 8px;
+  margin: 0 auto;
 }
 
 .card {
-  width: 100px;
-  height: 150px;
+  width: 60px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
