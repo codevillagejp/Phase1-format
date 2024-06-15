@@ -1,20 +1,36 @@
+body {
+  font-family: "Playwrite FR Moderne", cursive;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
 td {
-  background-color: rgb(70, 206, 216);
-  border: 1px solid black;
-  width: 50px;
-  height: 50px;
+  background-color: rgb(65, 105, 225);
+  border: 1px solid rgb(65, 105, 225);
+  width: 64px;
+  height: 64px;
   text-align: center;
   vertical-align: middle;
   table-layout: fixed;
   padding: 1px;
-  font-size: 20px;
+  font-size: 24px;
+  color: white;
 }
 
 /* チャレンジ問題 */
 
 /* .hit-num {
-  background-color: black ;
-  color: rgb(70, 206, 216) ;
+  background-color: rgba(199, 61, 193, 0.987);
+  color: white;
+}
+#view {
+  color: rgb(0, 0, 205);
+  font-size: 28px;
+}
+#hitNum {
+  margin-top: 0.5em;
+  font-size: 20px;
 } */
 
 /* チャレンジ問題 ここまで */
