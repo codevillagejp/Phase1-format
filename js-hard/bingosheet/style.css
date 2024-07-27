@@ -24,12 +24,17 @@ td {
   background-color: rgba(199, 61, 193, 0.987);
   color: white;
 }
-#view {
+#view tr:first-child {
+  background-color: white;
   color: rgb(0, 0, 205);
   font-size: 28px;
 }
 #hitNum {
+  background-color: rgba(199, 61, 193, 0.987);
+  color: white;
+  border: none;
   margin-top: 0.5em;
+  padding: 0.4em 1.1em;
   font-size: 20px;
 } */
 
