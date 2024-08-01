@@ -46,6 +46,11 @@ input[type="button"]:hover {
   background: #0056b3;
 }
 
+input:disabled {
+  background: #ccc;
+  pointer-events: none;
+}
+
 #startTimer {
   display: block;
   margin: 0 auto;
